@@ -4,4 +4,5 @@ On initialization, ".git" is generated in the directory where we run the command
 2. How can you use the staging area to make sure you have one commit per logical change?
 We can use staging area to add files one by one or files related to one logical change. As one logical change might affect more than one file and we might be changing multiple files on different times, the staging area helps to add them without actually committing to the repository but keeping them safely in staging area. And git provides diff between working and staging area as well as staging and repository version, we can always make sure whether our changes are correct and are related to one logical change and then only commit them to repository.
 
-3.  
+3. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches will be helpful when you want to work on experimental features, off work features and features that might affect the product big time and we want to make sure they work properly isoalted. 
