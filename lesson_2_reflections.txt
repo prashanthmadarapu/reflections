@@ -13,4 +13,17 @@ Using diagrams, we can visualize the commit log, the order of commits(by arrow),
 5. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 Merging two branches results in combining the changes in those two branches into the required branch. This way, we can merge the experimental features into productive code once they are fully tested and are up to expectations. By representing the merge that way, we can visualize which commit of a branch is merged onto the other branch and what are all the commits belong to the merged branch.
 
-6. 
+6. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Auto-merge
+Pros:
+Automatic merging is easy way of merging without any tedious lookup into the code
+The merger do not need to know the contents of the files being merged
+Cons: 
+Sometimes two branches might contain conflicting changes in the same files. So, the merge might result in loss of code of one of the branch. So, it is not safe always.
+Manual-merge
+Pros:
+Manual merge makes sure that there is no loss of code or no unintentional introduce of bugs
+Cons:
+Very tedious to look up manually and merge the changes.
+
+7. 
