@@ -1,0 +1,4 @@
+1. What happens when you initialize a repository? Why do you need to do it?
+On initialization, ".git" is generated in the directory where we run the command. We have to do it to make the directory to be recognized as a git repository and we can track the changes and do version management for the files in that directory.
+
+2. 

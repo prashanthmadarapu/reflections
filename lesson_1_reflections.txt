@@ -1,0 +1,29 @@
+1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+The diff viewer shows exactly where the differences are between two version of my file. So, i can only concentrate on those lines and see  what has gone wrong.
+
+2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Having the entire history of a file, I can compare and revert back to any previous version if i wanted to. Also, i can check with which version a bug has been introduced and can fix that easily.
+I can also check the differences between any of the versions.
+
+3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+Pros:
+	a. The author can choose to commit only logical and purposeful.
+	b. Will not clutter my commit history with unnecessary commits.
+Cons:
+	a. The author might forget to commit, which results in loss of code/rework.
+	b. User does not need to concentrate on when to commit. User can only concentrate on his work.
+
+4. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Many of the times, files can be interrelated and one change in the application can result in those multiple related files. So, it is perfectly makes sense to allow saving multiple files in one commit.
+
+5. How can you use the commands git log and git diff to view the history of files?
+First we have to clone the git repository for which, we want to view the history using git clone <repo-name>. Then we have to move to the repository folder using cd <repo-name> command. Now, we can execute git log to view the history of commits for this repository. We cal also execute git diff <commit-id-old> <commit-id-new> to know the differences in the files from <commit-id-old> to <commit-id-new>.
+
+6. How might using version control make you more confident to make changes that could break something?
+The version control allows to store as many versions of the files as we want. And also, version control provided set of sophisticated tools to easily view files of any version, compare files of different version and also go back to a specific version. So, the author can be confident of making changes though somethings might break the application as the above facts makes the author 
+easy to get the application back to stable state.
+
+7. Now that you have your workspace set up, what do you want to try using Git for?
+I would like to create a git repository and add some file structure to it. Also, repeat some cycles of commit changes to my files and then i will try to see the commit log, commit differences and also checkout the old commit and getting back to latest commit etc.
+
+8. 
