@@ -10,4 +10,7 @@ Branches will be helpful when you want to work on experimental features, off wor
 4. How do the diagrams help you visualize the branch structure?
 Using diagrams, we can visualize the commit log, the order of commits(by arrow), at which commit the new branches are created and also the commits which does not belong to any branch.
 
-5.  
+5. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches results in combining the changes in those two branches into the required branch. This way, we can merge the experimental features into productive code once they are fully tested and are up to expectations. By representing the merge that way, we can visualize which commit of a branch is merged onto the other branch and what are all the commits belong to the merged branch.
+
+6. 
