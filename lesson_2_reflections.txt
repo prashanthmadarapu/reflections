@@ -1,4 +1,7 @@
 1. What happens when you initialize a repository? Why do you need to do it?
 On initialization, ".git" is generated in the directory where we run the command. We have to do it to make the directory to be recognized as a git repository and we can track the changes and do version management for the files in that directory.
 
-2. 
+2. How can you use the staging area to make sure you have one commit per logical change?
+We can use staging area to add files one by one or files related to one logical change. As one logical change might affect more than one file and we might be changing multiple files on different times, the staging area helps to add them without actually committing to the repository but keeping them safely in staging area. And git provides diff between working and staging area as well as staging and repository version, we can always make sure whether our changes are correct and are related to one logical change and then only commit them to repository.
+
+3.  
