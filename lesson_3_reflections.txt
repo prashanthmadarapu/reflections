@@ -1,0 +1,5 @@
+1. When would you want to use a remote repository rather than keeping all your work local?
+Remote repositories help manypeople across locations to work on projects collaboratively. 
+This is very helpul for open source projects.
+
+2. 
