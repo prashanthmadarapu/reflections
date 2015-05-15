@@ -4,5 +4,11 @@ Remote repositories help manypeople across locations to work on projects collabo
 2. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 My local repository might contain changes which are not available yet on remote repository as i will be working on some changes at any point of time. So, the auto pull might result in loss of my changes or conflictions. So, it is always better to pull changes manually whenever we want to get latest code to ensure that our current work is not disturbed.
 
-3. 
+3. Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Forks useful to copy repositories from other's accounts when you don't have permissions to directly change their files.
+Clones useful to copy repositories from remote location to our local computer and also from one location in local computer to other location.
+Branches useful to maintain versions, work on off topics, work on experimental features in a project, risky features.
+Everything has its own use, so as explained in uses above, based on the usage we have to use the correct one.
+
+4. 
 
