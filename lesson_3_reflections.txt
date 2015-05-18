@@ -13,5 +13,8 @@ Everything has its own use, so as explained in uses above, based on the usage we
 4. What is the benefit of having a copy of the last known state of the remote stored locally?
 The state of remote will be helpful in determing what delta changes to fetch from remote, status of the local compared to remote and it eases the local development by allowing late merging with remote status giving us the merge differences.
 
-5. 
+5. How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+If we do not use collaboration tools like Git or GitHub, when we have changes, we have to send them manually to the reviewers through mails or ask the reviewer to come to our screen, if co-located. Also, if we have similar files and we are not co-located, merging conflicting changes could be tedious as we have to sync over phone or chat and do the merging. So, i don't think anything will be easier without collaboration tools.
+
+6. 
 
