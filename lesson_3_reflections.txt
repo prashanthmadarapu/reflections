@@ -10,5 +10,8 @@ Clones useful to copy repositories from remote location to our local computer an
 Branches useful to maintain versions, work on off topics, work on experimental features in a project, risky features.
 Everything has its own use, so as explained in uses above, based on the usage we have to use the correct one.
 
-4. 
+4. What is the benefit of having a copy of the last known state of the remote stored locally?
+The state of remote will be helpful in determing what delta changes to fetch from remote, status of the local compared to remote and it eases the local development by allowing late merging with remote status giving us the merge differences.
+
+5. 
 
