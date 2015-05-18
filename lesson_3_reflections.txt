@@ -16,5 +16,9 @@ The state of remote will be helpful in determing what delta changes to fetch fro
 5. How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 If we do not use collaboration tools like Git or GitHub, when we have changes, we have to send them manually to the reviewers through mails or ask the reviewer to come to our screen, if co-located. Also, if we have similar files and we are not co-located, merging conflicting changes could be tedious as we have to sync over phone or chat and do the merging. So, i don't think anything will be easier without collaboration tools.
 
-6. 
+6. When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Separate branch makes it easy for collaborative changes across locations and also it makes easy for reviewing by others contributing to the project.
+Benefits of making changes directly in master: Easy for developement
+Benefits of making changes in different branch: Easy for getting changes reviewed, safe process in a collaborative environment
+ 
 
