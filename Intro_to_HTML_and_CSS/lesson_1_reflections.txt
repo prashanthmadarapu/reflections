@@ -1,1 +1,14 @@
+HTML is tree structured. Language of the web. 
+It has specific syntax and rules.
+HTML - HyperTextMarkupLanguage
+All html elements are rectangular.
+All elements are called defined using tags.
+HTML - CSS - DOM
+Html tags are converted to DOM elements.
+html elements will have name, attributes.
+
+DOM - Document Object Model
+
+CSS - Cascading Style Sheets
+CSS defined style of the html elements and defined how they look on a document.
 1. 
