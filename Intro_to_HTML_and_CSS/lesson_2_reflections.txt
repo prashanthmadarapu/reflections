@@ -1,0 +1,17 @@
+Grid based design
+Frameworks
+Responsive web pages - adaptive design
+Grid with 12columns is ideal solution as the screen can be devided into 2/3/4 sections evenly. And more than 12 columns 
+might make screen not readable.
+
+Negative space: space around elements
+
+Overflows: when the space available is not enough for the content of the element
+
+Media Queries: 
+  Change CSS properties based on device, screen size and also color
+  @media
+  
+normalize.css from google code to have consistent css across browsers
+
+
