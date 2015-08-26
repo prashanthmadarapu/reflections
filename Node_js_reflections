@@ -57,4 +57,18 @@ it will search in the sub fodler of parent folder with the name node_modules rec
 till it is found or the root folder.
 
 16. What do the modules .js files look like?
->> 
+>> consists of normal javascript code except one extra requirement i.e, it has to export the public functions that it wants 
+other modules to use using "exports" keyword like exports.generate = generateScenario;.
+
+17. NPM
+>> stands for node package manager
+>> used to download modules developed by other communities
+>> if the downloading module requires any other modules to function, it downloads the dependency modules as well
+>> http://npmjs.org
+>> package can be installed using npm install
+>> package can be published to npm registry using npm publish
+>> any package can be searched using npm search <search-term>
+>> http://nodetoolbox.com/ - modules are organized by theme
+>> a module can be installed using npm install <module-name>. The module will be installed locally to your application. 
+If you want to use same module in different application, you have to install the module again locally to other apps.
+This way you can use different versions of a module in different apps.
