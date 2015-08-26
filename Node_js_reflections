@@ -69,6 +69,9 @@ other modules to use using "exports" keyword like exports.generate = generateSce
 >> package can be published to npm registry using npm publish
 >> any package can be searched using npm search <search-term>
 >> http://nodetoolbox.com/ - modules are organized by theme
->> a module can be installed using npm install <module-name>. The module will be installed locally to your application. 
-If you want to use same module in different application, you have to install the module again locally to other apps.
+>> a module can be installed using npm install <module-name>. The module will be installed locally to your application by 
+creating node_modules folder under the project/app. If you want to use same module in different application, 
+you have to install the module again locally to other apps. 
 This way you can use different versions of a module in different apps.
+>> modules can be updated using npm update command. This will search for all modules on system and updates them, if it founds
+updates on central database.
