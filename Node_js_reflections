@@ -1,0 +1,60 @@
+1. But what can we actually do with Node.js?
+>> You can use javascript language on the server.
+
+2. what is the classic website framework?
+>> PHP/JavaEE etc on the server to generate data or web page, JavaScript for the client to modify the web page.
+
+3. What changes with the arrival of Node.js to classic website framework?
+>> You can use javacript on server side to generate data or web page as well as on client side to modify the web page.
+
+4. Why does Node.js seem different? Is it because it uses JavaScript?
+>> Yes, because it uses javascript, which is a language based on events. This is where node.js draws all its power and speed from.
+With node.js, we can create real time applications such as chat server, very fast upload system and 
+any such systems which required to respond to numerous requests rapidly and efficiently, in real time.
+
+5. Is Node.js a framework?
+>> No, its not. It is a low level environment. It is more like C than PHP, Django, Ruby on rails. 
+Thats why it is not recommended to novices. But, there are web based frameworks like Express.js, 
+which are based on Node.js, which allow us to avoid repetetive task imposed by low level nature of Node.js. 
+But, still they are complex to work with.
+
+6. Why is Node.js fast?
+>> The speed of Node.js comes from maily two things i.e, V8 engine and non-blocking model.
+V8 engine: Developed by google to use as part of google chrome browser which changed the way the browsers process javscript.
+Non-blocking model: Asynchronous way of handling operations using callback handlers.
+
+7. How do you run a application with Node.js?
+node <fileName>.js
+
+8. Node.js doesn’t use an HTTP server like Apache. In fact, it’s up to us to create the server! Isn’t that great? 
+
+9. Unlike Apache, Node.js is monothread. 
+This means that there is only one process and one version of the program that can be used at any one time in its memory.
+
+10. Yes, it can only do one thing at a time and therefore only runs on one processor core. 
+However, it does it efficiently, despite the latter, and is still much faster!
+This is due to the event-orientated nature of Node.js. Apps that use Node never sit around doing nothing. 
+As soon as there is an action that takes a little too long, the program hands over to Node.js, 
+which will carry out other actions while waiting for the event to happen to tell it that the operation is finished
+
+11. Node.js libraries are called modules and they are loading using require("")
+
+12. Node.js is mainly based on events and they will be everywhere. 
+We can attach multiple listeners for same event and all listeners will be called.
+
+13. With on() method, you can listen to any event on a object.
+
+14. With emit() method, you can trigger an event on a object.
+
+15. modules
+>> import modules using require("<module-name>")
+>> node.js will search for <module-name>.js file and if found it will load that file.
+>> node.js will auto find all inbuilt modules
+>> if you want to load your own modules, either put them under a relative location to current folder and 
+specify the relative location or provide it under "node_modules" sub folder, then you do not need to specify the relative location.
+>> If the file is not available under node_modules subfolder of current location, 
+it will search in the sub fodler of parent folder with the name node_modules recursively 
+till it is found or the root folder.
+
+16. What do the modules .js files look like?
+>> 
