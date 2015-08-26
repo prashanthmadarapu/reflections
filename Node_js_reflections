@@ -75,3 +75,23 @@ you have to install the module again locally to other apps.
 This way you can use different versions of a module in different apps.
 >> modules can be updated using npm update command. This will search for all modules on system and updates them, if it founds
 updates on central database.
+
+18. Declaring your module dependencies
+>> your module metadata as well as its dependencies can be declared using a simple json file which should be named as
+package.json file and should be kept in app root folder
+>> it mainly contains 3 properties i.e, name, version, dependencies
+>> name - name of the app that the external world will see, if published to npm
+>> version - current version of the app. Should be updated everytime new features or fixes provided to your app
+>> dependencies - array of dependent modules along with their versions that your modules supports
+if a simple version provided, your app works with only that version like "0.3.4".
+if version is prefixed with "~"(tilda) and 
+  you provided the version till patch, that means your app supports all patches of current major and minor version
+  you provided the version till minor, that means your app supports all minor versions of current major version.
+
+19. Publish own modules
+>> You can also publish your own app as a module, if your app is capable of providing reusable features(exports).
+>> this can be done with the following
+>> create account on npm - npm adduser
+>> make sure your app has package.json file and README.md file which describes your module in more detail. 
+Mini tutorials or examples on how to use your module will be helpful.
+>> publish your module from your app folder - npm publish
