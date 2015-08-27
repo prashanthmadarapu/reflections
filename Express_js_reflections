@@ -1,0 +1,16 @@
+1. What is Express.js?
+>> Express.js is a micro framework around node.js to ease the development with node.js as it is low level.
+>> It provides tools to develop apps using node.js faster
+
+2. What are some benefits using Express.js?
+>> It allows you to generate routes for your app and to use templates
+
+3. How to install it?
+>> install express.js using npm install express
+
+4. How it makes routes handling easy?
+>> With node.js it is very hard to manage routes as it has to be done with nested if's and does not support dynamic routings
+>> With express.js, we can use express.get("/route/1", function(req, res) {}) to easily map each route to its own logic.
+>> Also, can support dynamic routes using variables in the route which should be prefixed with ":" like "route/:routeNumber/path".
+And the variable can be read using req.params.etagenum. This way it can support REST services efficiently.
+>> The invalid routes can be handled using express.use(function(req, res, next){});
