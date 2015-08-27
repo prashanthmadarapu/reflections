@@ -12,5 +12,30 @@
 >> With node.js it is very hard to manage routes as it has to be done with nested if's and does not support dynamic routings
 >> With express.js, we can use express.get("/route/1", function(req, res) {}) to easily map each route to its own logic.
 >> Also, can support dynamic routes using variables in the route which should be prefixed with ":" like "route/:routeNumber/path".
-And the variable can be read using req.params.etagenum. This way it can support REST services efficiently.
+And the variable can be read using req.params.routeNumber. This way it can support REST services efficiently.
 >> The invalid routes can be handled using express.use(function(req, res, next){});
+
+5. What are templates?
+>> tempaltes are useful to generate dynamic html content.
+>> they are just files with any extension and having html code with dynamic placeholders for variables
+>> We can use variables, for loops and conditions in templates
+>> There are many template languages like PHP, Twig, JSP, EJS, Smarty, Haml and Jade.
+>> Express.js allows to use most of these languages.
+
+6. What is Embedded JavaScript and how to write templates using it?
+>> Embedded JavaScript also referred to as EJS is a template language.
+>> It can be installed like any other npm module i.e, npm install ejs
+>> the template file will have an extension of "ejs" like myTemplate.ejs
+>> example content of a template file say homePage.ejs is,
+<h1>You're in the bedroom </h1>
+<p>You're on floor no <%= floor %></p>
+where "floor" is a variable passed by the caller to this template and replaced in runtime.
+>> Scriptlets can be written like above <%= %> to use variables
+>> Script tags like <% %> can be used to write javascript native code like for loops, conditions etc
+
+7. How can we use templates in Express.js?
+>> Express.js allows us to use templates by providing an api on response object.
+>> You can use response.render("<template-file-name>.ejs", {}<required input in the json format>)
+>> for ex: for the above sample code, response.render("homePage.ejs", {"floor" : floorNumber});
+>> By default Express.js searches for the given template file in a subfolder called "views". So, you should place your template
+file in a subfolder called "views"
