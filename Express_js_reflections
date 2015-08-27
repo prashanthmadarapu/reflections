@@ -42,3 +42,19 @@ where "floor" is a variable passed by the caller to this template and replaced i
 >> for ex: for the above sample code, response.render("homePage.ejs", {"floor" : floorNumber});
 >> By default Express.js searches for the given template file in a subfolder called "views". So, you should place your template
 file in a subfolder called "views"
+
+8. How Express.js works internally?
+>> Express.js is a framework based on middleware which are application modules each providing a specific feature.
+>> We can load whichever middleware we want to use.
+>> It has 15 pieces of middleware, each of which is a micro feature.
+>> eg: compression, cookie-parser, serve-favicon, serve-static, cookie-session, csrf etc
+>> These pieces of middleware are interconnected and can communicate with each other. 
+>> They communicate with each other by sending upto 4 settings/arguments "err", "request", "response", "next"
+>> These pieces used to be part of a module called "Connect" as part of Express. But now all of them are separate modules 
+except serve-static/static. So, they have to be installed and imported separately .
+
+9. How to use middleware in Express.js?
+>> Any piece of middleware can be used using app.use();
+>> but before usign them, you have to install the required piece of middleware using npm install.
+>> and import the piece using require.
+>> the order of loading of middleware pieces is importent as they are interconnected.
