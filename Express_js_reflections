@@ -5,8 +5,11 @@
 2. What are some benefits using Express.js?
 >> It allows you to generate routes for your app and to use templates
 
-3. How to install it?
+3. How to install it and use it?
 >> install express.js using npm install express
+>> can be imported like any other module in an app using var express = require("express");
+>> You should create an install of it to use its apis like var app = express();
+>> app contains all the apis exposed by Express.js framework like app.get();
 
 4. How it makes routes handling easy?
 >> With node.js it is very hard to manage routes as it has to be done with nested if's and does not support dynamic routings
