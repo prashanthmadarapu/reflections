@@ -87,6 +87,7 @@ if a simple version provided, your app works with only that version like "0.3.4"
 if version is prefixed with "~"(tilda) and 
   you provided the version till patch, that means your app supports all patches of current major and minor version
   you provided the version till minor, that means your app supports all minor versions of current major version.
+>> All module dependencies can be installed in singel step using "npm install" command, if your app has this package.json
 
 19. Publish own modules
 >> You can also publish your own app as a module, if your app is capable of providing reusable features(exports).
