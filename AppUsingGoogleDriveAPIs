@@ -4,3 +4,5 @@
 >> Include save button from google drive using the following html.
 <div class="g-savetodrive" data-src="<savable file download link>" data-filename="<name to store as in drive>" data-sitename="<site name from which it is saved to drive>"></div>
 
+2. Google picker with Drive
+>> 
