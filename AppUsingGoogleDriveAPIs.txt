@@ -1,0 +1,41 @@
+1. Save Button
+>> Include drive APIs library using following script import.
+<script src="https://apis.google.com/js/platform.js"></script>
+>> Include save button from google drive using the following html.
+<div class="g-savetodrive" data-src="<savable file download link>" data-filename="<name to store as in drive>" data-sitename="<site name from which it is saved to drive>"></div>
+
+2. Google picker with Drive
+>> In general apps providing uplaod form functionality receives file in app and then saves it in cloud(or CDN - content delivery network) and the app finally receives the cloud location(url) of the file.
+>> With Drive apps, we can skip the receiving file in app and directly save in cloud.
+>> Google Picker is a modal window where user can select a file or upload.
+>> If user tries to upload and he is not authorized, then it asks the user to login to google account
+>> When user uploads a file, the file is saved to the user drive account and the window is closed and the file url is returned to app
+
+3. What are the advantages of Google picker against <input type="file">?
+>> Does not take space on our server for intermediat storage
+>> We save bandwidth due to above reason
+>> We don't need to write code for parsing and upload file to cloud
+
+4. Google picker will have two tabs, one for uplaod and another for Google Docs!
+>> Google docs tab can be used to show all the available files in drive to user
+>> If user selects a file and clicks on select button in window, the app is notified with the url of the file in drive
+
+5. What are the prerequisites or presteps to use this google picker?
+>> Login to google developer console app at https://console.developers.google.com/
+>> Create a project for your app
+>> In APIs & auth >> APIs, search for Picker API and enable it
+>> In APIs & auth >> Credential, create a OAuth client id(for web app, if web app) which asks for the user consent so that our app can use users data
+>> Note down client id and client secret got from the above client id creation
+>> In APIs & auth >> Credential, create a API key >> browser to identify our project and check and access quota
+>> Note down API key created from above step
+
+6. How to implement google picker?
+>> Load google APIs in web page using script tag and provide callback function using "onload" attribtue of script tag
+  https://apis.google.com/js/api.js
+>> In the load api callback function, load auth API and provide callback function once auth api is loaded
+  Also, load actual picker API
+>> In auth API load callback function, ask for user consent to provide the access to his/her drive data and also provide a call back where we handle the user authorization result
+>> In user auth callback, if user auth is successful, then get the access token for that and create picker dialog
+>> To create picker dialog, we need to pass oauth token and developer key and the views that should be displayed to user
+
+
