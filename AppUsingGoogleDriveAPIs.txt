@@ -38,4 +38,8 @@
 >> In user auth callback, if user auth is successful, then get the access token for that and create picker dialog
 >> To create picker dialog, we need to pass oauth token and developer key and the views that should be displayed to user
 
+7. How to get the url of the file uploaded or selected?
+>> We need to attach a callback to builder to get notified once the user uploads/selects files.
+>> The callback get the data of the file such as name, url, description which can be accessed using result.docs which returns array of objects for each object selected and also the action that the user choose.
+>> We can also enable or disable features using picker builder api. The available features can be found on google.picker.Feature API. 
 
